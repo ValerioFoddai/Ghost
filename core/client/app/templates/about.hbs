@@ -1,6 +1,6 @@
 <section class="gh-view js-settings-content">
     <header class="view-header">
-        {{#gh-view-title openMobileMenu="openMobileMenu"}}<span>About Ghost</span>{{/gh-view-title}}
+        {{#gh-view-title openMobileMenu="openMobileMenu"}}<span>{{t 'about.title'}}</span>{{/gh-view-title}}
     </header>
     <section class="view-content">
         <header class="gh-about-header">
@@ -11,34 +11,34 @@
 
         <section class="gh-env-details">
             <ul class="gh-env-list">
-                <li class="gh-env-list-version"><strong>Version</strong> {{model.version}}</li>
-                <li><strong>Environment</strong> {{model.environment}}</li>
-                <li class="gh-env-list-database-type"><strong>Database</strong> {{model.database}}</li>
-                <li><strong>Mail</strong> {{#if model.mail}}{{model.mail}}{{else}}Native{{/if}}</li>
+                <li class="gh-env-list-version"><strong>{{t 'about.version'}}</strong> {{model.version}}</li>
+                <li><strong>{{t 'about.environment'}}</strong> {{model.environment}}</li>
+                <li class="gh-env-list-database-type"><strong>{{t 'about.database'}}</strong> {{model.database}}</li>
+                <li><strong>{{t 'about.mail'}}</strong> {{#if model.mail}}{{model.mail}}{{else}}{{t 'about.mailNative'}}{{/if}}</li>
             </ul>
             <div class="gh-env-help">
-                <a href="http://support.ghost.org" class="btn btn-minor" target="_blank">User Documentation</a>
-                <a href="https://ghost.org/slack/" class="btn btn-minor" target="_blank">Get Help With Ghost</a>
+                <a href="http://support.ghost.org" class="btn btn-minor" target="_blank">{{t 'about.userDocumentation'}}</a>
+                <a href="https://ghost.org/slack/" class="btn btn-minor" target="_blank">{{t 'about.help'}}</a>
             </div>
         </section>
 
         <section class="gh-credits">
-            <h2>The People Who Made it Possible</h2>
+            <h2>{{t 'about.creditsTitle'}}</h2>
 
             <section class="gh-contributors">
                 {{partial "contributors"}}
             </section>
 
-            <p>Ghost is built by an incredible group of contributors from all over the world. Here are just a few of the people who helped create the version you’re using right now.</p>
+            <p>{{t 'about.creditsDescription'}}</p>
 
-            <a href="https://ghost.org/about/contribute/" class="btn btn-blue btn-lg">Find out how you can get involved</a>
+            <a href="https://ghost.org/about/contribute/" class="btn btn-blue btn-lg">{{t 'about.getInvolved'}}</a>
 
         </section>
 
         <footer class="gh-copyright-info">
-            Copyright 2013 - 2015 Ghost Foundation, released under the <a href="https://github.com/TryGhost/Ghost/blob/master/LICENSE">MIT license</a>.
+            {{t 'about.copyright'}}, {{t 'about.license'}} <a href="https://github.com/TryGhost/Ghost/blob/master/LICENSE">{{t 'about.licenseType'}}</a>.
             <br>
-            <a href="https://ghost.org/">Ghost</a> is a trademark of the <a href="https://ghost.org/about/">Ghost Foundation</a>.
+            <a href="https://ghost.org/">{{t 'about.app'}}</a> {{t 'about.trademark'}} <a href="https://ghost.org/about/">{{t 'about.owner'}}</a>.
         </footer>
     </section>
 </section>

@@ -24,7 +24,12 @@ export default Route.extend(ApplicationRouteMixin, ShortcutsRoute, {
 
     config: inject.service(),
     dropdown: inject.service(),
+    intl: inject.service(),
     notifications: inject.service(),
+  
+    beforeModel() {
+      this.get('intl').setLocale('en-gb');
+    },
 
     afterModel(model, transition) {
         if (this.get('session.isAuthenticated')) {

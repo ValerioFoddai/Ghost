@@ -1,0 +1,38 @@
+about:
+  app: 'Ghost'
+  creditsTitle: 'The People Who Made it Possible'
+  creditsDescription: 'Ghost is built by an incredible group of contributors from all over the world. Here are just a few of the people who helped create the version you’re using right now.'
+  copyright: 'Copyright 2013 - 2015 Ghost Foundation'
+  database: 'Database'
+  environment: 'Environment'
+  help: 'Get Help With Ghost'
+  getInvolved: 'Find out how you can get involved'
+  license: 'released under the'
+  licenseType: 'MIT license'
+  mail: 'Mail'
+  mailNative: 'Native'
+  owner: 'Ghost Foundation'
+  title: 'About Ghost'
+  trademark: 'is a trademark of the'
+  userDocumentation: 'User Documentation'
+  version: 'Version'
+  
+
+signin:
+  email: 'Email Address'
+  forgot: 'Forgot?'
+  password: 'Password'
+  signin: 'Sign In'
+  
+signup:
+  title: 'Create your account'
+  fullName: 'Full name'
+  fullNamePlaceholder: 'Eg. John H. Watson'
+  email: 'Email address'
+  password: 'Password'
+  submit: 'Create Account'
+  
+userList:
+  photo: 'Photo of {owner}'
+  lastSeen: 'Last seen: {date}'
+  
