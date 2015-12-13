@@ -112,14 +112,14 @@
             {{#gh-form-group errors=model.errors property="meta_title"}}
                 <label for="meta-title">{{t 'posts.settings.metatitle'}}</label>
                 {{gh-input class="post-setting-meta-title" id="meta-title" value=metaTitleScratch name="post-setting-meta-title" focus-out="setMetaTitle" stopEnterKeyDownPropagation="true"}}
-                <p>{{format-html-message 'posts.settings.titleCharCount' count=(gh-count-down-characters metaTitleScratch 70)}}</p>
+                <p>{{format-html-message 'common.charCount' recommended="156" count=(gh-count-down-characters metaTitleScratch 70)}}</p>
                 {{gh-error-message errors=model.errors property="meta_title"}}
             {{/gh-form-group}}
 
             {{#gh-form-group errors=model.errors property="meta_description"}}
                 <label for="meta-description">{{t 'posts.settings.metaDescription'}}</label>
                 {{gh-textarea class="gh-input post-setting-meta-description" id="meta-description" value=metaDescriptionScratch name="post-setting-meta-description" focus-out="setMetaDescription" stopEnterKeyDownPropagation="true"}}
-                <p>{{format-html-message 'posts.settings.descriptionCharCount' count=(gh-count-down-characters metaDescriptionScratch 156)}}</p>
+                <p>{{format-html-message 'common.charCount' recommended="70" count=(gh-count-down-characters metaDescriptionScratch 156)}}</p>
                 {{gh-error-message errors=model.errors property="meta_description"}}
             {{/gh-form-group}}
 

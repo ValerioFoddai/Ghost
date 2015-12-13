@@ -20,6 +20,51 @@ about:
   userDocumentation: 'User Documentation'
   version: 'Version'
   
+common:
+  charCount: 'Recommended: <b>{recommended}</b> characters. You’ve used {count}'
+  
+components:
+  common:
+    back: 'Back'
+    close: 'Close'
+    menu: 'Menu'
+  editorSaveButton:
+    toggleSettings: 'Toggle Settings Menu'
+  navMenu:
+    about: 'About Ghost'
+    content: 'Content'
+    codeInjection: 'Code Injection'
+    general: 'General'
+    help: 'Help'
+    howTo: 'How to Use Ghost'
+    labs: 'Labs'
+    markdown: 'Markdown Help'
+    navigation: 'Navigation'
+    newPost: 'New Post'
+    profile: 'Your Profile'
+    signout: 'Sign Out'
+    settings: 'Settings'
+    supportCenter: 'Support Center'
+    viewBlog: 'View blog'
+    team: 'Team'
+    tags: 'Tags'
+    tweet: 'Tweet @TryGhost!'
+    wishlist: 'Wishlist'
+  navItem:
+    add: 'Add'
+    delete: 'Delete'
+    reorder: 'Reorder'
+  profileImage:
+    userImage: 'User image'
+    upload: 'Upload an image'
+  search:
+    search: 'Search'
+  tagSettings:
+    deleteTag: 'Delete Tag'
+    description: 'Description'
+    name: 'Name'
+    slug: 'URL'
+  
 error:
   at: 'at'
   stackTrace: 'Stack Trace'
@@ -34,7 +79,6 @@ posts:
     author: 'Author'
     back: 'Back'
     close: 'Close'
-    descriptionCharCount: 'Recommended: <b>156</b> characters. You’ve used {count}'
     feature: 'Feature this post'
     title: 'Post Settings'
     metadata: 'Meta Data'
@@ -46,7 +90,6 @@ posts:
     publishDate: 'Publish Date'
     searchEnginePreview: 'Search Engine Result Preview'
     toStaticPage: 'Turn this post into a static page'
-    titleCharCount: 'Recommended: <b>70</b> characters. You’ve used {count}'
     tags: 'Tags'
     view: 'View post'
     

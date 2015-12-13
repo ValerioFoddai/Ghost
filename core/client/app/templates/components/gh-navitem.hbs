@@ -1,6 +1,6 @@
 {{#unless navItem.last}}
     <span class="gh-blognav-grab icon-grab">
-        <span class="sr-only">Reorder</span>
+        <span class="sr-only">{{t 'components.navItem.reorder'}}</span>
     </span>
 {{/unless}}
 
@@ -17,10 +17,10 @@
 
 {{#if navItem.last}}
     <button type="button" class="gh-blognav-add" {{action "addItem"}}>
-        <i class="icon-add2"><span class="sr-only">Add</span></i>
+        <i class="icon-add2"><span class="sr-only">{{t 'components.navItem.add'}}</span></i>
     </button>
 {{else}}
     <button type="button" class="gh-blognav-delete" {{action "deleteItem" navItem}}>
-        <i class="icon-trash"><span class="sr-only">Delete</span></i>
+        <i class="icon-trash"><span class="sr-only">{{t 'components.navItem.delete'}}</span></i>
     </button>
 {{/if}}

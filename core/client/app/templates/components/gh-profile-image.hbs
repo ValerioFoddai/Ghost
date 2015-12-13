@@ -4,7 +4,7 @@
 
         {{#if displayGravatar}}
             <div id="account-image" class="gravatar-img" style={{imageBackground}}>
-                <span class="sr-only">User image</span>
+                <span class="sr-only">{{t 'components.profileImage.userImage'}}</span>
             </div>
         {{/if}}
     {{/unless}}
@@ -13,7 +13,7 @@
 
     <span class="edit-account-image js-img-dropzone">
         <i class="icon-photos">
-            <span class="sr-only">Upload an image</span>
+            <span class="sr-only">{{t 'components.profileImage.upload'}}</span>
         </i>
     </span>
     {{#if fileStorage}}<input type="file" class="file-uploader js-file-input" name="uploadimage">{{/if}}
