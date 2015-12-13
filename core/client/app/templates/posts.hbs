@@ -1,8 +1,8 @@
 {{#gh-content-view-container as |container|}}
 <header class="view-header">
-    {{#gh-view-title openMobileMenu="openMobileMenu"}}<span>Content</span>{{/gh-view-title}}
+    {{#gh-view-title openMobileMenu="openMobileMenu"}}<span>{{t 'posts.main.content'}}</span>{{/gh-view-title}}
     <section class="view-actions">
-        {{#link-to "editor.new" class="btn btn-green" title="New Post"}}New Post{{/link-to}}
+        {{#link-to "editor.new" class="btn btn-green" title="New Post"}}{{t 'posts.main.new'}}{{/link-to}}
     </section>
 </header>
 
@@ -25,11 +25,11 @@
                                             <span class="page">Page</span>
                                         {{else}}
                                             <time datetime="{{post.published_at}}" class="date published">
-                                                Published {{gh-format-timeago post.published_at}}
+                                                {{t 'posts.main.published' date=(gh-format-timeago post.published_at)}}
                                             </time>
                                         {{/if}}
                                     {{else}}
-                                        <span class="draft">Draft</span>
+                                        <span class="draft">{{t 'posts.main.draft'}}</span>
                                     {{/if}}
                                 </span>
                             </section>

@@ -1,3 +1,6 @@
+application:
+  skip: 'Skip to main content'
+  
 about:
   app: 'Ghost'
   creditsTitle: 'The People Who Made it Possible'
@@ -17,7 +20,44 @@ about:
   userDocumentation: 'User Documentation'
   version: 'Version'
   
-
+error:
+  at: 'at'
+  stackTrace: 'Stack Trace'
+  
+posts:
+  main:
+    content: 'Content'
+    draft: 'Draft'
+    new: 'New Post'
+    published: 'Published {date}'
+  settings:
+    author: 'Author'
+    back: 'Back'
+    close: 'Close'
+    descriptionCharCount: 'Recommended: <b>156</b> characters. You’ve used {count}'
+    feature: 'Feature this post'
+    title: 'Post Settings'
+    metadata: 'Meta Data'
+    metadataDescription: 'Extra content for SEO and social media.'
+    metaDescription: 'Meta Description'
+    metatitle: 'Meta Title'
+    postUrl: 'Post URL'
+    preview: 'Preview'
+    publishDate: 'Publish Date'
+    searchEnginePreview: 'Search Engine Result Preview'
+    toStaticPage: 'Turn this post into a static page'
+    titleCharCount: 'Recommended: <b>70</b> characters. You’ve used {count}'
+    tags: 'Tags'
+    view: 'View post'
+    
+reset:
+  confirmPassword: 'Confirm Password'
+  resetPassword: 'Reset Password'
+  password: 'Password'
+  
+setup:
+  back: 'Back'
+  
 signin:
   email: 'Email Address'
   forgot: 'Forgot?'
